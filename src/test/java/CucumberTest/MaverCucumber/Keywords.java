@@ -247,6 +247,16 @@ public class Keywords {
 		
 	}
 	
+	/**
+	 * @author Syed
+	 * 
+	 * Method 'switchToIFrameByIndex' can be used to wwitch to any
+	 * iframe element by it's index
+	 * 
+	 * @param index
+	 * @throws InterruptedException
+	 */
+	
 	public void switchToIFrameByIndex(int index) throws InterruptedException
 	{
 		Thread.sleep(3000);
@@ -262,8 +272,11 @@ public class Keywords {
 	}
 	
 	/**
-	 * This 'switchToIFrameByElement' keyword method is used to switch to any iframe 
-	 * when only id, name or index is not enough to locate the iframe
+	 * @author Syed
+	 * 
+	 * This 'switchToIFrameByElement' keyword method is used to switch to
+	 * any iframe element by using the element returned after it is 
+	 * found by using any locator (not just id, name or index)
 	 * 
 	 * @param property
 	 * @param locator
