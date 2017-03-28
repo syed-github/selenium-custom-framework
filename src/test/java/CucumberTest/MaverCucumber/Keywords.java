@@ -195,6 +195,13 @@ public class Keywords {
 		else{System.out.println("The element is not displayed");}
 	}
 	
+	/**
+	 * @author Syed
+	 * Method 'validateText' validate the presence of a text in page source
+	 * 
+	 * @param text
+	 */
+	
 	public void validateText (String text)
 	{  
 		if(driver.getPageSource().contains(text))
