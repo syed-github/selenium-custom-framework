@@ -229,6 +229,16 @@ public class Keywords {
 		driver.close();
 	}
 	
+	/**
+	 * @author Syed
+	 * 
+	 * The method 'switchToIFrame' identifies an 'iframe' element by 
+	 * either it's id or name
+	 * 
+	 * @param identifierValue
+	 * @throws InterruptedException
+	 */
+	
 	public void switchToIFrame(String identifierValue) throws InterruptedException
 	{
 		Thread.sleep(3000);

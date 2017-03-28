@@ -9,6 +9,7 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(
 		dryRun=true,
 		monochrome=true,
+		format = {"pretty","html:target/html/"},
 		features = "src/test/java/features",
 		glue={"stepDefinitions"}
 		)

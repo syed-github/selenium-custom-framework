@@ -1,5 +1,7 @@
 package CucumberTest.MaverCucumber;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,6 +23,7 @@ public class TestScripts {
 	//	browser = "ie";
 		wd = new InternetExplorerDriver();
 		keyword = new Keywords(wd);
+		wd.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 	}
 	
 	@Test
